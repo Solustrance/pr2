@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webstyles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img class="floor" src="HouseFlrPlan.svg" usemap="#image-map">
+    <map name="image-map">
+        <area class="room" id="room1" onclick="roomDescs('room1')" title="Room 1" coords="7,58,115,160" shape="rect"></area>
+        <area class="room" id="room2" onclick="roomDescs('room2')" title="Room 2" coords="88,9,148,55" shape="rect"></area>
+        <area class="room" id="room3" onclick="roomDescs('room3')" title="Room 3" coords="118,122,184,191" shape="rect"></area>
+        <area class="room" id="room4" onclick="roomDescs('room4')" title="Room 4" coords="208,104,280,189" shape="rect"></area>
+        <area class="room" id="room5" onclick="roomDescs('room5')" title="Room 5" coords="205,22,276,100" shape="rect"></area>
+    </map>
+
+    <div id="description-modal" style="display:none;">
+        <p id="description-content"></p> 
+    </div>
+    <script src="descriptions.js"></script>
+<div class="bottom-panel">
+    <button onclick="showSection('rooms')">Rooms</button>
+    <button onclick="showSection('schedule')">My Schedule</button>
+</div>
+    <script src="ibaba.js"></script>
+</body>
+</html>

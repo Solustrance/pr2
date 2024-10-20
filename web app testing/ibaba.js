@@ -1,0 +1,3 @@
+function showSection(bottomPanel) {
+
+}
